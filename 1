@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class Main {
+  //  public static void main(String[] args) {
+ //       System.out.println("Hello world!");
+//        System.out.println("Це моя перша программа на java");
+
+    public static  void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("What is Bitcoin price today?");
+        double kurs = sc.nextInt();
+        System.out.println("How much $ do you have?");
+        double count = sc.nextInt();
+        double bts = (count*1.0)/kurs;
+        String result = String.format("%.7f",bts);
+        System.out.println("You can buy " +result+ " BTC");
+
+    }
+}
